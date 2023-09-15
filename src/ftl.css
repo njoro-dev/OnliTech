@@ -1,0 +1,191 @@
+body {
+    background-image:url('64f24323f539a389c3376f2c_Midlibrary 2-4 cover OPT.jpg');
+   
+}
+
+.root {
+    grid-area: root;
+    display: grid;
+    padding: 10px;
+    border: solid grey;
+    
+    margin: 9px;
+    grid-template-areas:
+    "header header"
+    "account menu"
+    "cage cage"
+    "bet bet"
+    "betStatus betStatus";
+    
+   
+
+
+}
+.menu {
+
+    
+    padding: 5px;
+    grid-area: menu;
+    display:flex;
+    
+    flex-direction: row-reverse;
+    color:wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+.account {
+    grid-area: account;
+    
+    padding: 5px;
+    justify-content: flex-start;
+    border:solid;
+    display:flex;
+    height:30px;
+}
+.cage {
+    grid-area: cage;
+    
+    padding: 5px;
+    margin:10px;
+    
+    text-align: center;
+    display:grid;
+    grid-template-areas:
+    "message message"
+    "cage1 cage2";
+}
+.bet {
+    grid-area: bet;
+    
+    padding: 5px;
+    text-align: center;
+    display:flex;
+    justify-items: center;
+    margin:8px;
+}
+.betStatus {
+    grid-area: betStatus;
+    
+    padding: 5px;
+    
+    text-align: center;
+}
+
+.cage1 {
+
+    grid-area: cage1;
+    padding: 5px;
+    text-align: center;
+    height:300px;
+    background-color: lightGreen;
+    border-radius:12px;
+    margin:6px;
+    display: grid;
+    grid-template-areas: 
+    "youWinCage"
+    "lionCage"
+    ;
+      
+}
+
+.cage2 {
+    grid-area: cage2;
+    padding: 5px;
+    background-color:rgb(34, 76, 90);
+    text-align: center;
+    height:300px;
+    border-radius:12px;
+    margin:6px;
+    display: grid;
+    grid-template-areas: 
+    "youWinCage"
+    "lionCage"
+    ;   
+}
+.betButton {
+    background-color: rgb(20, 202, 80);
+    border-radius:9px;
+    width:70%;
+    text-align: center;
+    height:50px;
+    border:solid white 1px;
+    color:red;
+}
+.rebet {
+    background-color:rgb(250, 7, 7);
+    color: white;
+    border-radius:9px;
+    width:70%;
+    text-align: center;
+    height:50px;
+    
+    border:solid white 1px;
+}
+h4 {
+    color:rgb(100, 90, 90);
+    font-size: large;
+    padding:10px;
+    margin:6px;
+}
+.balance {
+    color:lightGreen;
+    padding:10px;
+    margin:6px;
+}
+
+.message {
+    grid-area:message;
+}
+.header {
+    grid-area:header;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:rgb(100, 90, 90);
+    padding:6px ;
+    color: lightgreen;
+    border-radius: 6px;  
+}
+
+.youWin {
+    grid-area: youWin;
+    border-radius: 100px;
+    color: rgb(20, 202, 80);
+
+}
+.youLoose {
+    border-radius: 100px;
+    grid-area: youLoose;
+    
+    color:rgb(170, 86, 86);
+    
+}
+.lion {
+    height: 200px;
+    
+
+}
+.youWinCage {
+    display: grid;
+    grid-template-areas: 
+    "youWin"
+    ;
+    grid-area: youWinCage;
+    
+}
+.youWinCages {
+    display: grid;
+    grid-template-areas: 
+    "youLoose"
+    ;
+    grid-area: youWinCage;
+}
+    
+.lionCage {
+    grid-area:lionCage; 
+    
+}
+
+.accountBalance {
+    color: orange;
+    border: solid;
+    width: 30%;
+}
